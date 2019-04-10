@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1553902519685" stop="1553902532166" version="1.4.15" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Verify user can only see hotels 10 miles or less</name>
+    <title>Verify user can only see hotels 10 miles or less</title>
+    <test-cases>
+        <test-case start="1553902519690" stop="1553902519690" status="passed">
+            <name>Given I am on  my beginning default locations search result screen.</name>
+            <title>Given I am on  my beginning default locations search result screen.</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="NNamdis-Air"/>
+                <label name="thread" value="50538@NNamdis-Air.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553902529610" stop="1553902529610" status="passed">
+            <name>Then I verify system displays all hotels within 10 miles radius of airport.</name>
+            <title>Then I verify system displays all hotels within 10 miles radius of airport.</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="NNamdis-Air"/>
+                <label name="thread" value="50538@NNamdis-Air.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553902530356" stop="1553902530357" status="failed">
+            <name>And I verify Hilton Hotel is within radius</name>
+            <title>And I verify Hilton Hotel is within radius</title>
+            <failure>
+                <message>AssertionError: Hilton Hotel out of range expected [true] but found [false]</message>
+                <stack-trace>java.lang.AssertionError: Hilton Hotel out of range expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertTrue(Assert.java:41)
+	at framework.HotelsdotcomHomePage.verifyHiltionHotelIsDisplayed(HotelsdotcomHomePage.java:256)
+	at stepdefinition.HotelsSD.showHiltonHotel(HotelsSD.java:163)
+	at ✽.And I verify Hilton Hotel is within radius(hotelsdotcom.feature:31)
+</stack-trace>
+            </failure>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="NNamdis-Air"/>
+                <label name="thread" value="50538@NNamdis-Air.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="story" value="Verify user can only see hotels 10 miles or less"/>
+        <label name="feature" value="Verify User results"/>
+        <label name="framework" value="CucumberJVM"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

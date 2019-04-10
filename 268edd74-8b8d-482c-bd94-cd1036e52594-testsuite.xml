@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1553902322319" stop="1553902325547" version="1.4.15" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Verify user can only view the result by selected property class</name>
+    <title>Verify user can only view the result by selected property class</title>
+    <test-cases>
+        <test-case start="1553902322388" stop="1553902322392" status="passed">
+            <name>Given I am on default locations search result screen.</name>
+            <title>Given I am on default locations search result screen.</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="NNamdis-Air"/>
+                <label name="thread" value="50538@NNamdis-Air.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553902323558" stop="1553902323558" status="passed">
+            <name>When I select property class 4 stars.</name>
+            <title>When I select property class 4 stars.</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="NNamdis-Air"/>
+                <label name="thread" value="50538@NNamdis-Air.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1553902324867" stop="1553902324868" status="passed">
+            <name>Then I verify system displays only 4 star hotels on search result.</name>
+            <title>Then I verify system displays only 4 star hotels on search result.</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="NNamdis-Air"/>
+                <label name="thread" value="50538@NNamdis-Air.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="story" value="Verify user can only view the result by selected property class"/>
+        <label name="feature" value="Verify User results"/>
+        <label name="framework" value="CucumberJVM"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>
