@@ -94,8 +94,8 @@ public class HotelsSD {
         Assert.assertEquals(SharedSD.getDriver().findElement(chooseHotelBanner).getText(), "Start by choosing your hotel");
     }
 
-    @Then("^I verify system displays all hotels within (.*) miles radius of airport.$")
-    public void displayHotelMileage() throws InterruptedException{
+    @Then("^I verify system displays all hotels within 10 miles radius of airport.$")
+    public void displayHotelMileage() throws InterruptedException{ //(.*) for dynamic values
 
         hdchp.clickOnDistanceButton();
         Thread.sleep(8000);
@@ -103,8 +103,8 @@ public class HotelsSD {
     }
 
     @And("^I verify Hilton Hotel is within radius$")
-    public void showHiltonHotel(String hotelName){
+    public void showHiltonHotel(){
 
-        hdchp.verifyHotelNameIsDisplayed(hotelName);
+        hdchp.verifyHotelNameIsDisplayed("hilton");
     }
 }
